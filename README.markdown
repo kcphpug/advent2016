@@ -4,10 +4,10 @@
 challenge where a new coding problem is posted daily. Solve the problem
 with any technique or language you want.
 
-The KC PHP User Group did Day 1, Problem 1 as a group. The solution was
+The KC PHP User Group attempted Day 1 and Day 2 as a group. The solution was
 written in PHP and uses PHPUnit for tests.
 
-See `Puzzle1.md` for Puzzle 1, Part 1 and 2. Sign up on
+See `instructions` directory for each day's instructions and input. Sign up on
 <http://adventofcode.com> to continue working the problems.
 
 ## Installation
@@ -19,6 +19,12 @@ Start by installing Composer following instructions here:
 2. Install dependencies
 
         php composer.phar install
+
+## Running puzzle solvers
+
+        php day1-1.php
+        php day1-2.php
+        php day2-1.php
 
 ## Running tests
 
@@ -33,3 +39,7 @@ environment:
 2. Run the test suite:
 
         ./vendor/bin/phpunit
+
+3. Run test suite for individual days:
+
+        vendor/bin/phpunit --filter=Day1
