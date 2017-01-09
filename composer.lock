@@ -4,9 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4aac010328a04762d4285cfeb9ddfe4b",
-    "content-hash": "1407ece1a7f2f5ae7e3122e1bef7e672",
-    "packages": [],
+    "hash": "d39d3f689f4f265356409e261468a80b",
+    "content-hash": "691b9d78219ed0f117826db3a5bbae9a",
+    "packages": [
+        {
+            "name": "ericpoe/haystack",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ericpoe/haystack.git",
+                "reference": "1f4c63fd74351c9abd86d5cda8fb680f82e9e443"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ericpoe/haystack/zipball/1f4c63fd74351c9abd86d5cda8fb680f82e9e443",
+                "reference": "1f4c63fd74351c9abd86d5cda8fb680f82e9e443",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Haystack\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Poe",
+                    "email": "eric.poe@gmail.com",
+                    "homepage": "http://ericpoe.com"
+                }
+            ],
+            "description": "Forget Haystack vs Needle order, the object IS the Haystack. Haystack is a library that allows for pipelining and immutable structures.",
+            "time": "2016-12-09 04:51:29"
+        }
+    ],
     "packages-dev": [
         {
             "name": "phpunit/php-code-coverage",
