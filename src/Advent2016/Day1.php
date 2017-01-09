@@ -4,11 +4,9 @@ namespace Advent2016;
 
 class Day1
 {
-    private $history = [];
-    private $curr = null;
-
     public function getBlocksAway($input)
     {
+        // This function written as a group, mostly inspired by Garrett Rathbone's solution
         $directions = ['N', 'E', 'S', 'W'];
 
         $currentDir = 0;
@@ -48,32 +46,12 @@ class Day1
         return abs($coordinatesNorth) + abs($coordinatesEast);
     }
 
-    public function getEasterBunnyCoordinates($input)
-    {
-        // Break apart the input
-
-        // DO some calculations
-
-        return [0,0];
-    }
-
     public function part2($input)
     {
-        $instructions = [];
-
-        $curr = 'N';
-        $directions = ['N', 'E', 'S', 'W'];
-
         $RsLs = array_map(function ($full) {
             return [substr($full, 0, 1), substr($full, 1)];
         }, explode(', ', $input));
         // output ['R', 100]
-
-//        $turnsWithSteps = array_map(function ($instruction) {
-//            list ($letter, $times) = $instruction;
-//
-//            return array_flip(array_fill_keys($keys, $letter));
-//        }, $RsLs);
 
         // input ['R', 100]
         $cardinalWithSteps = [];
@@ -86,7 +64,7 @@ class Day1
         }
         // output ['N', 100]
 
-        // TODO: This is where Part 1 and Part 2 behavior branches
+        // This is where Part 1 and Part 2 behavior branches
 
         // This solves part 2
         // Convert ['N',100] --> [[0, 1], ...]
